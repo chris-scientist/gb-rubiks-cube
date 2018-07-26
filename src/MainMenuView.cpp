@@ -7,16 +7,16 @@
 // Afficher le menu principale
 int MainMenuView::paint() const {
   const char* items[] = {
-    "Nouvelle partie",
-    "Choix niveau",
-    "A propos"
+    Lang::getNewPart(),
+    Lang::getChoiceLevel(),
+    Lang::getAbout()
   };
 
   const uint8_t indexItem = gb.gui.menu("Menu", items);
   int choice = 0;
-  if(items[indexItem] == "Choix niveau") {
+  if(items[indexItem] == Lang::choiceLevelFR || items[indexItem] == Lang::choiceLevelEN) {
     choice = 1;
-  } else if(items[indexItem] == "A propos") {
+  } else if(items[indexItem] == Lang::aboutFR || items[indexItem] == Lang::aboutEN) {
     choice = 2;
   }
   return choice;

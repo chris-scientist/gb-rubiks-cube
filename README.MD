@@ -1,7 +1,7 @@
 ﻿
 # Rubik's cube pour Gamebuino META
 
-Version 1.0
+Version 1.1
 
 ## Description succincte du projet
 
@@ -45,3 +45,13 @@ Bouton menu pour accéder au menu du jeu, afin de :
 - Démarrer une nouvelle partie.
 - Choisir le niveau (par défaut la difficulté est "facile").
 - Afficher les crédits.
+
+## Historique des versions
+
+### v1.1
+
+Traduction en anglais de l'interface
+
+### v1.0
+
+Première version

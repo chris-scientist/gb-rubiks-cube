@@ -7,6 +7,8 @@
 
 #include <Gamebuino-Meta.h>
 
+#include "Lang.h"
+
 class LevelMenuView {
   public:
     int paint() const;

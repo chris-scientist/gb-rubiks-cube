@@ -13,7 +13,7 @@ void PauseView::paint() const {
   gb.display.setColor(WHITE);
   gb.display.println();
   gb.display.println();
-  gb.display.println("(A) acceder au menu");
-  gb.display.println("(B) reprendre partie");
+  gb.display.println(Lang::getGoToMenu());
+  gb.display.println(Lang::getGetBackPart());
 }
 

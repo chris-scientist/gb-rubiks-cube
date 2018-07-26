@@ -8,6 +8,8 @@
 
 #include <Gamebuino-Meta.h>
 
+#include "Lang.h"
+
 class MainMenuView {
   private:
     

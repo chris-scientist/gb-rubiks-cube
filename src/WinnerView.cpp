@@ -4,15 +4,27 @@
 #include "WinnerView.h"
 
 void WinnerView::paint() const {
+  bool isEnLang = Lang::isEnglishLanguage();
+  
   gb.display.setColor(BROWN);
-  gb.display.setFontSize(2);
+  if(isEnLang) {
+    gb.display.setFontSize(1);
+    gb.display.println();
+    gb.display.println();
+  } else {
+    gb.display.setFontSize(2);
+  }
   gb.display.println();
   gb.display.println();
-  gb.display.println("  Gagne");
+  gb.display.println(Lang::getCongratulations());
   gb.display.println();
+  if(isEnLang) {
+    gb.display.println();
+    gb.display.println();
+  }
   gb.display.setFontSize(1);
   gb.display.setColor(WHITE);
   gb.display.println();
-  gb.display.print("(A) pour continuer");
+  gb.display.print(Lang::getPressToContinue());
 }
 

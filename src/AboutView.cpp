@@ -11,13 +11,13 @@ void AboutView::paint() const {
   gb.display.println();
   gb.display.println("   Rubik's cube");
   gb.display.setColor(WHITE);
-  gb.display.println("   presente par");
+  gb.display.println(Lang::getCreatedBy());
   gb.display.setColor(BROWN);
   gb.display.println("  chris-scientist");
   gb.display.setColor(WHITE);
   gb.display.println();
   gb.display.println();
   gb.display.println();
-  gb.display.print("(A) acceder au menu");
+  gb.display.print(Lang::getGoToMenu());
 }
 

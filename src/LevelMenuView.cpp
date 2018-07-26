@@ -5,16 +5,16 @@
 
 int LevelMenuView::paint() const {
   const char* items[] = {
-    "Facile",
-    "Moyen",
-    "Difficile"
+    Lang::getEasy(),
+    Lang::getMedium(),
+    Lang::getHard()
   };
 
-  const uint8_t indexItem = gb.gui.menu("Niveau", items);
+  const uint8_t indexItem = gb.gui.menu(Lang::getLevel(), items);
   int choice = 10;
-  if(items[indexItem] == "Moyen") {
+  if(items[indexItem] == Lang::mediumFR || items[indexItem] == Lang::mediumEN) {
     choice = 20;
-  } else if(items[indexItem] == "Difficile") {
+  } else if(items[indexItem] == Lang::hardFR || items[indexItem] == Lang::hardEN) {
     choice = 30;
   }
   return choice;

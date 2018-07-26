@@ -7,6 +7,8 @@
 
 #include <Gamebuino-Meta.h>
 
+#include "Lang.h"
+
 class WinnerView {
   public:
     void paint() const;
